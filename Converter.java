@@ -254,19 +254,21 @@ public class converter {
 		do {
 
 			do {
-				System.out.println("Enter 1 to convert decimal to binary");
-				System.out.println("Enter 2 to convert decimal to octal");
-				System.out.println("Enter 3 to convert decimal to hexadecimal");
-				System.out.println("Enter 4 to convert binary to decimal");
-				System.out.println("Enter 5 to convert binary to octal");
-				System.out.println("Enter 6 to convert binary to hexadecimal");
-				System.out.println("Enter 7 to convert octal to binary");
-				System.out.println("Enter 8 to convert octal to decimal");
-				System.out.println("Enter 9 to convert octal to hexadecimal");
-				System.out.println("Enter 10 to convert hexaecimal to binary");
-				System.out.println("Enter 11 to convert hexadecimal to octal");
-				System.out.println("Enter 12 to convert hexadecimal to decimal");
-
+			        System.out.println("\t\tWelcome to the Number System Converter !!\n\t\t\tHope you enjoy using the converter\n");
+		                System.out.println("\t\t________________&&&&&&&&&&&_________________");
+		                System.out.println("\t\t|Enter 1 to convert decimal to binary\t   |");
+				System.out.println("\t\t|Enter 2 to convert decimal to octal\t   |");
+				System.out.println("\t\t|Enter 3 to convert decimal to hexadecimal |");
+				System.out.println("\t\t|Enter 4 to convert binary to decimal\t   |");
+				System.out.println("\t\t|Enter 5 to convert binary to octal\t   |");
+				System.out.println("\t\t|Enter 6 to convert binary to hexadecimal  |");
+				System.out.println("\t\t|Enter 7 to convert octal to binary\t   |");
+				System.out.println("\t\t|Enter 8 to convert octal to decimal\t   |");
+				System.out.println("\t\t|Enter 9 to convert octal to hexadecimal   |");
+				System.out.println("\t\t|Enter 10 to convert hexadecimal to binary |");
+				System.out.println("\t\t|Enter 11 to convert hexadecimal to octal  |");
+				System.out.println("\t\t|Enter 12 to convert hexadecimal to decimal|");
+				System.out.println("\t\t|________________&&&&&&&&&&&_______________|\n
 				choice = sc.nextInt();
 			} while (choice <= 0 || choice > 12);
 
