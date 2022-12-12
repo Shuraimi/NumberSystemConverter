@@ -67,3 +67,12 @@ Technologies used in the project:
 <br>
 <h3>Octal to Hexadecimal</h3>
 <img src="https://user-images.githubusercontent.com/92625656/206918340-db4da3f8-c575-48ee-84ef-a713460142c6.png" alt="project-screenshot" width="auto" >
+<br>
+<h3>Hexadecimal to Binary</h3>
+<img src="https://user-images.githubusercontent.com/92625656/207010415-6f6c91bd-f523-48f1-a271-6a466bd30475.png" alt="project-screenshot" width="auto">
+<br>
+<h3>Hexadecimal to Octal</h3>
+<img src="https://user-images.githubusercontent.com/92625656/207010569-7117d59b-547b-4179-824b-fde4a3af4ce2.png" alt="project-screenshot" width="auto">
+<br>
+<h3>Hexadecimal to Decimal</h3>
+<img src="https://user-images.githubusercontent.com/92625656/207010682-d4dc5bd9-04ae-4b90-85b8-616369d63480.png" alt="project-screenshot" width="auto">
