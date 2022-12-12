@@ -1,8 +1,6 @@
 
 <h1 align="center" id="title">Number System Converter</h1>
-
-<p align="center"><img src="https://socialify.git.ci/shuraimi/NumberSystemConverter/image?description=1&amp;descriptionEditable=This%20project%20coverts%20number%20from%20one%20number%20system%20to%20%20another.&amp;font=Source%20Code%20Pro&amp;forks=1&amp;issues=1&amp;name=1&amp;owner=1&amp;pattern=Overlapping%20Hexagons&amp;pulls=1&amp;stargazers=1&amp;theme=Auto" alt="project-image"></p>
-
+<p align="center"><img src="https://socialify.git.ci/shuraimi/numberSystemConverter/image?description=1&font=Source%20Code%20Pro&forks=1&issues=1&logo=https%3A%2F%2Fuser-images.githubusercontent.com%2F92625656%2F206967397-20e7460d-3e6c-471b-996e-7200ffe2d415.png&name=1&owner=1&pattern=Floating%20Cogs&pulls=1&stargazers=1&theme=Auto" alt="numberSystemConverter" width="auto"/></p>
   
   
 <h2>🧐 Features</h2>
