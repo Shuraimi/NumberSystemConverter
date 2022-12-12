@@ -1,7 +1,7 @@
 
 <h1 align="center" id="title">Number System Converter</h1>
 
-<p align="center"><img src="https://socialify.git.ci/shuraimi/numberSystemConverter/image?description=1&forks=1&issues=1&logo=https%3A%2F%2Fuser-images.githubusercontent.com%2F92625656%2F206987469-4cac2dd5-94aa-42ee-9d63-403550fa2b60.png&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Dark" alt="numberSystemConverter" width="auto" /></p>
+<p align="center"><img src="https://socialify.git.ci/shuraimi/numberSystemConverter/image?description=1&font=Source%20Code%20Pro&forks=1&issues=1&logo=https%3A%2F%2Fuser-images.githubusercontent.com%2F92625656%2F206987469-4cac2dd5-94aa-42ee-9d63-403550fa2b60.png&name=1&owner=1&pattern=Charlie%20Brown&pulls=1&stargazers=1&theme=Dark" alt="numberSystemConverter" width="auto" /></p>
 
   
   
@@ -22,13 +22,10 @@ Here're some of the project's best features:
 *   Hexadecimal to octal
 *   Hexadecimal to decimal
 
+<h2>Project Demo</h2>
+<img src="https://user-images.githubusercontent.com/92625656/207017814-c5b7a549-24d2-4199-901b-d78be7267b7b.gif" width="auto"/>
   
-  
-<h2>💻 Built with</h2>
 
-Technologies used in the project:
-
-*   Java
 <h2>Project Screenshots:</h2>
 
 <br>
@@ -76,3 +73,9 @@ Technologies used in the project:
 <br>
 <h3>Hexadecimal to Decimal</h3>
 <img src="https://user-images.githubusercontent.com/92625656/207010682-d4dc5bd9-04ae-4b90-85b8-616369d63480.png" alt="project-screenshot" width="auto">
+<br>
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   Java
