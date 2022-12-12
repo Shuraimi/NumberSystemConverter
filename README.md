@@ -1,7 +1,7 @@
 
 <h1 align="center" id="title">Number System Converter</h1>
 
-<p align="center"><img src="https://socialify.git.ci/shuraimi/NumberSystemConverter/image?description=1&amp;descriptionEditable=This%20project%20coverts%20number%20from%20one%20number%20system%20to%20%20another.&amp;font=Source%20Code%20Pro&amp;forks=1&amp;issues=1&amp;name=1&amp;owner=1&amp;pattern=Overlapping%20Hexagons&amp;pulls=1&amp;stargazers=1&amp;theme=Auto" alt="project-image"></p>
+<p align="center"><img src="https://socialify.git.ci/shuraimi/numberSystemConverter/image?description=1&forks=1&issues=1&logo=https%3A%2F%2Fuser-images.githubusercontent.com%2F92625656%2F206987469-4cac2dd5-94aa-42ee-9d63-403550fa2b60.png&name=1&owner=1&pattern=Plus&pulls=1&stargazers=1&theme=Dark" alt="numberSystemConverter" width="auto" /></p>
 
   
   
