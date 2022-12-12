@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class converter {
+public class numberSystemConverter {
 
 	static String decimalToBinary(int n) {
 		String rem = "";// used string
@@ -170,7 +170,9 @@ public class converter {
 			}
 
 		}
+
 		return flag;
+
 	}
 
 	static int HexadecimalToDecimal(String s) {
@@ -244,141 +246,164 @@ public class converter {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		// System.out.println("Enter the number ");
-		// int n=sc.nextInt();
+		int choice;
+		char option;
+		int number;
+		boolean validityFlag;
 
 		// to show and validate input of menu
-		int choice;
-		System.out.println("\t\tWelcomr to the Number System Converter \nHope it is useful!!");
-		char option;
+
+		System.out.println(
+				"\t\t\t\t\t\t\tWelcome to the \n\t\t\t\t\t\t   Number Systen Converter\n\t\t\t\t\t\tHope you enjoy using it :)!!");
+
 		do {
 
 			do {
-			        System.out.println("\t\tWelcome to the Number System Converter !!\n\t\t\tHope you enjoy using the converter\n");
-		                System.out.println("\t\t________________&&&&&&&&&&&_________________");
-		                System.out.println("\t\t|Enter 1 to convert decimal to binary\t   |");
-				System.out.println("\t\t|Enter 2 to convert decimal to octal\t   |");
-				System.out.println("\t\t|Enter 3 to convert decimal to hexadecimal |");
-				System.out.println("\t\t|Enter 4 to convert binary to decimal\t   |");
-				System.out.println("\t\t|Enter 5 to convert binary to octal\t   |");
-				System.out.println("\t\t|Enter 6 to convert binary to hexadecimal  |");
-				System.out.println("\t\t|Enter 7 to convert octal to binary\t   |");
-				System.out.println("\t\t|Enter 8 to convert octal to decimal\t   |");
-				System.out.println("\t\t|Enter 9 to convert octal to hexadecimal   |");
-				System.out.println("\t\t|Enter 10 to convert hexadecimal to binary |");
-				System.out.println("\t\t|Enter 11 to convert hexadecimal to octal  |");
-				System.out.println("\t\t|Enter 12 to convert hexadecimal to decimal|");
-				System.out.println("\t\t|________________&&&&&&&&&&&_______________|\n
+				System.out.println("\t\t\t\t\t __________________________________________");
+				System.out.println("\t\t\t\t\t|Enter 1 to convert decimal to binary\t   |");
+				System.out.println("\t\t\t\t\t|Enter 2 to convert decimal to octal\t   |");
+				System.out.println("\t\t\t\t\t|Enter 3 to convert decimal to hexadecimal |");
+				System.out.println("\t\t\t\t\t|Enter 4 to convert binary to decimal\t   |");
+				System.out.println("\t\t\t\t\t|Enter 5 to convert binary to octal\t   |");
+				System.out.println("\t\t\t\t\t|Enter 6 to convert binary to hexadecimal  |");
+				System.out.println("\t\t\t\t\t|Enter 7 to convert octal to binary\t   |");
+				System.out.println("\t\t\t\t\t|Enter 8 to convert octal to decimal\t   |");
+				System.out.println("\t\t\t\t\t|Enter 9 to convert octal to hexadecimal   |");
+				System.out.println("\t\t\t\t\t|Enter 10 to convert hexaecimal to binary  |");
+				System.out.println("\t\t\t\t\t|Enter 11 to convert hexadecimal to octal  |");
+				System.out.println("\t\t\t\t\t|Enter 12 to convert hexadecimal to decimal|");
+				System.out.print("\t\t\t\t\t ");
+				for (int i = 1; i <= 42; i++)
+					System.out.print("~");
+				System.out.println("\nPlease enter your choice");
 				choice = sc.nextInt();
 			} while (choice <= 0 || choice > 12);
 
 			switch (choice) {
 
 				case 1:
-					System.out.println("Enter the decimal number for conversion");
-					int n = sc.nextInt();
-					System.out.println("The binary number after conversion is " + decimalToBinary(n));
+					System.out.println("Enter the decimal number for conversion from decimal to binary");
+					number = sc.nextInt();
+					System.out.println("The binary number " + number + " after conversion from decimal to binary is => "
+							+ decimalToBinary(number));
 					break;
 				case 2:
-					System.out.println("Enter the decimal number for conversion");
-					int n1 = sc.nextInt();
-					System.out.println("The binary number after conversion is " + decimalToOctal(n1));
+					System.out.println("Enter the decimal number for conversion from decimal to octal");
+					number = sc.nextInt();
+					System.out.println("The octal number " + number + " after conversion from decimal to octal is => "
+							+ decimalToOctal(number));
 					break;
 				case 3:
-					System.out.println("Enter the decimal number for conversion");
-					int n2 = sc.nextInt();
-					System.out.println("The binary number after conversion is " + decimalToHexadecimal(n2));
+					System.out.println("Enter the decimal number for conversion from decimal to hexadecimal");
+					number = sc.nextInt();
+					System.out.println("The hexadecimal number " + number
+							+ " after conversion from decimal to hexadecimal is => " + decimalToHexadecimal(number));
 					break;
 				case 4:
-					int N;
-					boolean k;
-					// System.out.println(isBinary(N));
+
 					// taking input untill the given number is a valid binary number
 					do {
-						System.out.println("Enter number");
-						N = sc.nextInt();
-						k = isBinary(N);
-						if (k == false) {
-							System.out.println("enter a binary number");
+						System.out.println("Enter the binary number for conversion from binary to decimal");
+						number = sc.nextInt();
+						validityFlag = isBinary(number);
+						if (validityFlag == false) {
+							System.out.println("Please enter a valid binary number");
 						}
-					} while (k != true);
+					} while (validityFlag != true);
 					// The above do....while loop goes on untill the input is a valid binary number
-					System.out.println("The decimal number is " + binaryToDecimal(N));
+					System.out.println("The decimal number " + number
+							+ " after conversion from binary to decimal is => " + binaryToDecimal(number));
 					break;
 				case 5:
-					int n3;
-
 					// loops on untill the input is a valid octal number
 					do {
-						System.out.println("Enter your binary number");
-						n3 = sc.nextInt();
-					} while (!(isBinary(n3)));
-
-					String answer = binaryToOctal(n3);
-					System.out.println("The octal number is " + answer);
+						System.out.println("Enter the binary number for conversion from binary to octal");
+						number = sc.nextInt();
+						validityFlag = isBinary(number);
+						if (validityFlag == false)
+							System.out.println("Please enter a valid binary number");
+					} while (!(validityFlag));
+					System.out.println("The octal number " + number + " after conversion from binary to octal is => "
+							+ binaryToOctal(number));
 					break;
 				case 6:
-					int n6;
-
 					// loops on untill the input is a valid octal number
 					do {
-						System.out.println("Enter your binary number");
-						n6 = sc.nextInt();
-					} while (!(isBinary(n6)));
+						System.out.println("Enter the binary number for conversion from binary to hexadecimal");
+						number = sc.nextInt();
+						validityFlag = isBinary(number);
+						if (validityFlag == false)
+							System.out.println("Please enter a valid binary number");
 
-					String answer1 = binaryToHexadecimal(n6);
-					System.out.println("The hexadecimal number is " + answer1);
+					} while (!(validityFlag));
+					System.out.println("The hexadecimal number " + number
+							+ " after conversion from binary to hexadecimal is => " + binaryToOctal(number));
 					break;
 				case 7:
-					int n7;
 					do {
-						System.out.println("Enter octal number ");
-						n7 = sc.nextInt();
-					} while (!(isOctal(n7)));
+						System.out.println("Enter octal number for conversion from octal to binary ");
+						number = sc.nextInt();
+						validityFlag = isOctal(number);
+						if (validityFlag == false)
+							System.out.println("Please enter a valid octal number");
+
+					} while (!(validityFlag));
+
 					String ans = "";
 					int digit = 0;
-					while (n7 != 0) {
-						digit = n7 % 10;
+					while (number != 0) {
+						digit = number % 10;
 						ans = octalToBinary(digit) + ans;
-						n7 = n7 / 10;
+						number = number / 10;
 					}
-					System.out.println(ans);
+					System.out.println(
+							"The binary number " + number + " after conversion from octal to binary is => " + ans);
 					break;
 				case 8:
-					int n8;
-
 					do {
-						System.out.println("Enter you number");
-						n8 = sc.nextInt();
-					} while (!(isOctal(n8)));
+						System.out.println("Enter the octal number for conversion from octal to decimal");
+						number = sc.nextInt();
+						validityFlag = isOctal(number);
+						if (validityFlag == false)
+							System.out.println("Please enter a valid octal number");
+
+					} while (!(validityFlag));
 					// Above do..while loop goes on untill the given input is a valid octal
-					int ocd = octalToDecimal(n8);
-					System.out.println(ocd);
+					System.out.println("The decimal number " + number + " after conversion from octal to decimal is => "
+							+ octalToDecimal(number));
 					break;
 				case 9:
-					int n9;
 					do {
-						System.out.println("Enter you number to be converted from Octal to Hexadecimal");
-						n9 = sc.nextInt();
-					} while (!(isOctal(n9)));
+						System.out.println("Enter the octal number for conversion from Octal to Hexadecimal");
+						number = sc.nextInt();
+						validityFlag = isOctal(number);
+						if (validityFlag == false)
+							System.out.println("Please enter a valid octal number");
+					} while (!(validityFlag));
 					// Above do..while loop goes on untill the given input is a valid octal
-					int octDeci = octalToDecimal(n9);
+					int octDeci = octalToDecimal(number);
 					String deciHex = decimalToHexadecimal(octDeci);
-					System.out.println("Your Hexadecimal number after conversion is " + deciHex);
+					System.out.println("The hexadecimal number " + number
+							+ " after conversion from octal to hexadecimal is => " + deciHex);
 					break;
 				case 10:
-					String s10;
-					boolean Hexa10;
+					String hexa;// to store hexadecimal inputs fro conversion
 					do {
-						System.out.println("Enter your string");
-						s10 = sc.nextLine();
-						Hexa10 = isHexa(s10);
-					} while (!Hexa10);
+						System.out.println("Enter the hexadecimal number for conversion from hexadecimal to binary");
+
+						hexa = sc.nextLine();
+						// System.out.println(validityFlag);
+						validityFlag = isHexa(hexa);
+						// // System.out.println(validityFlag);
+						// if (validityFlag == false)
+						// System.out.println("Please enter a valid hexadecimal number");
+						// System.out.println(validityFlag);
+					} while (!validityFlag);
 
 					String ans1 = "";
-					String subAns = "";
-					for (int i = 0; i < s10.length(); i++) {
-						char ch = s10.charAt(i);
+					// String subAns = "";
+					for (int i = 0; i < hexa.length(); i++) {
+						char ch = hexa.charAt(i);
 						if (ch >= 65 && ch <= 70)
 							ans1 += alphaToBinary(ch);
 						else {
@@ -386,35 +411,39 @@ public class converter {
 							ans1 += hexaToBinary(n10);
 						}
 					}
-					System.out.println(ans1);
+					System.out.println(
+							"The binary number " + hexa + " after conversion from hexadecimal to binary is => " + ans1);
 
 					break;
 				case 11:
-					String p = "";
-					boolean Hexa;
+					String hexa1;// to store hexadecimal inputs fro conversion
 					do {
-						System.out.println("Enter your number for conversion from Hexadecimal to Octal");
-						p = sc.nextLine();
-						Hexa = isHexa(p);
-					} while (!Hexa);
+						System.out.println("Enter the number for conversion from Hexadecimal to Octal");
+						hexa1 = sc.nextLine();
+						validityFlag = isHexa(hexa1);
+						// if (validityFlag == false)
+						// System.out.println("Please enter a valid hexadecimal number");
+					} while (!(validityFlag));
 					// Above loop goes on untill the given input is a valid hexadecimal
 
-					int hexToDec = HexadecimalToDecimal(p);
+					int hexToDec = HexadecimalToDecimal(hexa1);
 					String decToOct = decimalToOctal(hexToDec);
-					System.out.println("The octal number after conversion is " + decToOct);
+					System.out
+							.println("The octal number " + hexa1 + " after conversion from hexadecimal to octal is => "
+									+ decToOct);
 
 					break;
 				case 12:
-					String s3;
-					boolean Hexa1;
+					String hexa2;// to store hexadecimal inputs fro conversion
 					do {
-						System.out.println("Enter your string");
-						s3 = sc.nextLine();
-						Hexa1 = isHexa(s3);
-					} while (!Hexa1);
-					int hexToDec1 = HexadecimalToDecimal(s3);
+						System.out.println("Enter the hexadecimal number for conversion from hexadecimal to decimal");
+						hexa2 = sc.nextLine();
+						validityFlag = isHexa(hexa2);
+					} while (!(validityFlag));
+					int hexToDec1 = HexadecimalToDecimal(hexa2);
 					String result = decimalToOctal(hexToDec1);
-					System.out.println(result);
+					System.out.println("The decimal number " + hexa2
+							+ " after conversion from hexadecimal to decimal is => " + result);
 					break;
 
 			}
@@ -434,5 +463,6 @@ public class converter {
 		} while (option == 'y');
 		if (option == 'n')
 			System.out.println("Bye!!\nThank you for using the converter");
+		System.out.println("\t\t\t\t\tMade with love by Shuraim");
 	}
 }
