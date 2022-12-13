@@ -167,6 +167,7 @@ public class numberSystemConverter {
 				flag = true;
 			} else {
 				flag = false;
+                                break;//used to break the loop is any character of string is an invalid hexadecimal
 			}
 
 		}
